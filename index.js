@@ -6,7 +6,7 @@ import cors from 'cors';
 import dotenv from 'dotenv'
 
 const app=express();
-const PORT=Process.env.PORT||4000;
+const PORT=process.env.PORT||4000;
 dotenv.config();
 const username=process.env.DB_USERNAME;
 const password=process.env.DB_PASSWORD;
