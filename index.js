@@ -8,9 +8,10 @@ import dotenv from 'dotenv'
 const app=express();
 const PORT=process.env.PORT||4000;
 dotenv.config();
+const URL1= process.env.DATABASE;
+
 const username=process.env.DB_USERNAME;
 const password=process.env.DB_PASSWORD;
-
 app.use(cors());
 app.use('/',Route);
 connection(username,password);

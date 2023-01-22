@@ -4,6 +4,7 @@ export const getnews=async(req,res)=>{
 try{
   let data=await news.find({})
   res.status(200).json(data);
+  console.log("/news looged")
 }
 catch(error){
 res.staus(500).json({message:data.message})
